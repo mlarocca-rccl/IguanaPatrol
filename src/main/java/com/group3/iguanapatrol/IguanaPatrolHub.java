@@ -1,11 +1,14 @@
+/**
+ * 
+ */
 package com.group3.iguanapatrol;
 
 /**
- * Iguana Patrol
  * @author Michael La Rocca
  *
  */
 public class IguanaPatrolHub {
+
 
 	private String networkInterface;
 	private String alexaCompatible;
@@ -73,4 +76,3 @@ public class IguanaPatrolHub {
 	}
 
 }
-

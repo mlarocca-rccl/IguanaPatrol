@@ -20,4 +20,16 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Documentation/v2 Diagrams/Class Diagram - Iguana Patrol v2.png</name>
+			<type>1</type>
+			<location>G:/My Drive/Spring 2022/ISM6106 Systems Analysis/Projects/Iguana Patrol/UML Diagrams/Class Diagram - Iguana Patrol v2.png</location>
+		</link>
+		<link>
+			<name>Documentation/v2 Diagrams/Draft Iguana Patrol v2.vpp</name>
+			<type>1</type>
+			<location>G:/My Drive/Spring 2022/ISM6106 Systems Analysis/Projects/Iguana Patrol/UML Diagrams/Draft Iguana Patrol v2.vpp</location>
+		</link>
+	</linkedResources>
 </projectDescription>
