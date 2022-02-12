@@ -30,7 +30,7 @@ public class Camera {
 	}
 	
 	public void captureObject() {
-	//	
+		//	
 	}
 	
 	public void objectMapping() {

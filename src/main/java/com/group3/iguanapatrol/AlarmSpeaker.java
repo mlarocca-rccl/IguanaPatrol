@@ -9,9 +9,9 @@ package com.group3.iguanapatrol;
  */
 public class AlarmSpeaker {
 
-	public int frequency;
-	public int soundDB;
-	public int chargeState;
+	private int frequency;
+	private int soundDB;
+	private int chargeState;
 	
 	public void pairHub() {
 		//
