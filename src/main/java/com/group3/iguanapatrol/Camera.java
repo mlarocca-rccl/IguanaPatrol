@@ -8,28 +8,41 @@ package com.group3.iguanapatrol;
  *
  */
 public class Camera {
-	public String color;
-	public int resolution;
+	private String wideAngleLens;
+	private int resolution;
+	private int lookAngle;
+	private String motionDetection;
 	
-	public void capture() {
-		
+	public void pairHub() {
+		//
 	}
 	
-	public void record() {
-		
+	public void takePicture() {
+		//
 	}
 	
-	public void targetIguana() {
-		
+	public void recordVideo() {
+		//
 	}
 	
-	public void animalRecognition() {
-		
+	public void detectMotion() {
+		//
 	}
 	
-	public void detectMovement() {
-		
+	public void captureObject() {
+	//	
 	}
 	
+	public void objectMapping() {
+		
+	}
+
+	public void sendHubBiometrics() {
+		//
+	}
+
+	public void alertLowBattery() {
+		// send alert to hub that device battery is running low
+	}
 	
 }
