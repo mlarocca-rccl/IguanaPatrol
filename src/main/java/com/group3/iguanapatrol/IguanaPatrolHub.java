@@ -3,18 +3,40 @@
  */
 package com.group3.iguanapatrol;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import edu.fiu.jit.GenericComponent;
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class IguanaPatrolHub {
+public class IguanaPatrolHub implements GenericComponent {
 
 
 	private String networkInterface;
 	private String alexaCompatible;
 	private String homekitCompatible;
 	private String iFTTT;
+	private AlarmSpeaker myAlarm;
+	private Battery myBattery;
+	private CloudService myCloud;
+	private Camera myCamera;
+	private InfraredDetector myIR;
+	private UserDevice myUserDevice;
+	public IguanaPatrolHub() {
+		 myAlarm = new AlarmSpeaker();
+		 myBattery = new Battery();
+		 myCamera = new Camera();
+		 myCloud = new CloudService();
+		 myIR = new InfraredDetector();
+		 myUserDevice= new UserDevice();
 	
+	}
+
 	public void pairDevice() {
 		//
 	}
@@ -74,5 +96,23 @@ public class IguanaPatrolHub {
 		// TODO Auto-generated method stub
 
 	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Iguana Patrol Security System";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public List<SelfCheckCapable> getSubComponents() {
+		List internalComponents = new ArrayList(); // create an empty list
+		Collections.addAll(internalComponents, myAlarm, myBattery, myCamera, myCloud, myIR, myUserDevice); // add all your sub components
+		return internalComponents;	}
 
 }

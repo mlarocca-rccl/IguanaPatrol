@@ -3,11 +3,14 @@
  */
 package com.group3.iguanapatrol;
 
+import edu.fiu.jit.SelfCheckCapable;
+import edu.fiu.jit.SelfCheckUtils;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class InfraredDetector {
+public class InfraredDetector implements SelfCheckCapable {
 
 	private String passiveInfraredSensor;
 	private int resolution;
@@ -37,5 +40,17 @@ public class InfraredDetector {
 	
 	public void sendLowBattery() {
 		//
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Infrared Detector";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.5);
 	}
 }
